@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FurnishMeister</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ! header -->
+      <header class="header" id="header">
+        <div class="header__container container">
+          <a href="." class="header__logo">FurnishMeister</a>
+          <nav class="header__nav">
+            <ul class="header__menu menu-header">
+              <li class="menu-header__link"><a class="main-link" href="./aboutUs.html">Про нас</a></li>
+              <li class="menu-header__link"><a class="main-link" href=".">Магазин</a></li>
+              <li class="menu-header__link"><a class="main-link active" href="./contacts.html">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="header__icons">
+            <a class="header__icon header__icon_favourite" href="./favourite.html">
+              <svg>
+                <use href="sprite.svg#heart"></use>
+              </svg>
+            </a>
+            <a class="header__icon header__icon_cart" href="./cart.html">
+              <svg>
+                <use href="sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- ! header -->
+      <!-- ! sidebar -->
+      <!-- ! sidebar -->
+      <main class="content">
+        <div class="content__container container">
+          <form class="contact-form" id="form">
+            <h1 class="contact-form__title">Задай запитання</h1>
+            <div class="contact-form__field">
+              <input placeholder="Ел. пошта" type="text" id="email">
+              <label for="email">Ел. пошта</label>
+            </div>
+            <div class="contact-form__field">
+              <input placeholder="Повне ім'я" type="text" id="name">
+              <label for="name">Повне ім'я</label>
+            </div>
+            <div class="contact-form__field">
+              <input placeholder="Повідомлення" type="text" id="message">
+              <label for="message">Повідомлення</label>
+            </div>
+            <p class="contact-form__error" id="error"></p>
+            <button class="contact-form__button">Відпраити</button>
+          </form>
+        </div>
+      </main>
+      <footer id="footer">
+      </footer>
+    </div>
+    <script type="module" type="text/javascript" src="/scripts/contacts.js"></script>
+  </body>
+</html>
