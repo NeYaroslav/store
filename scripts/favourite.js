@@ -24,7 +24,7 @@ function run () {
   const products = favouriteList.getTransformedData()
     .filter(favouriteListItem => favouriteListItem.isFavourite)
     .map(favouriteListItem => {
-      return new Product(favouriteListItem, 'sprite.svg', onFavouriteButtonClick, onCartButtonClick)
+      return new Product(favouriteListItem, './public/sprite.svg', onFavouriteButtonClick, onCartButtonClick)
     })
   productsContainer.innerHTML = ''
   productsContainer.append(...products.map(product => product.createProductCard()))

@@ -19,7 +19,7 @@ footer.innerText = `© ${new Date().getFullYear()}`
 const cart = new Cart('cart')
 const favouriteList = new FavouriteList('favourite', furniture)
 const products = favouriteList.getTransformedData().map(favouriteListItem => {
-  return new Product(favouriteListItem, 'sprite.svg', onFavouriteButtonClick, onCartButtonClick)
+  return new Product(favouriteListItem, './public/sprite.svg', onFavouriteButtonClick, onCartButtonClick)
 })
 
 document.getElementById('products').append(...products.map(product => product.createProductCard()))
