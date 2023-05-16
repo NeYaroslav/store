@@ -360,7 +360,7 @@ if (document.getElementById("index-page")) {
     s = new K("favourite", q),
     c = s
       .getTransformedData()
-      .map((f) => new U(f, "./sprite-3a8e0957.svg", a, p));
+      .map((f) => new U(f, "./assets/sprite-3a8e0957.svg", a, p));
   document
     .getElementById("products")
     .append(...c.map((f) => f.createProductCard())),
